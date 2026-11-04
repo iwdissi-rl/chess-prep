@@ -1,0 +1,18 @@
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2026.02.01"]
+[Round "-"]
+[White "Alice"]
+[Black "mallory"]
+[Result "0-1"]
+[ECO "B01"]
+[ECOUrl "https://www.chess.com/openings/Scandinavian-Defense-Mieses-Kotrc-Variation-3.Nc3-Qa5"]
+[UTCDate "2026.02.01"]
+[UTCTime "10:00:00"]
+[WhiteElo "1510"]
+[BlackElo "1490"]
+[TimeControl "180+2"]
+[Termination "mallory won by resignation"]
+[Link "https://www.chess.com/game/live/100000001"]
+
+1. e4 {[%clk 0:03:01.1]} 1... d5 {[%clk 0:03:00.5]} 2. exd5 {[%clk 0:02:59.0]} 2... Qxd5 {[%clk 0:02:58.2]} 3. Nc3 {[%clk 0:02:55.4]} 3... Qa5 {[%clk 0:02:57.0]} 0-1

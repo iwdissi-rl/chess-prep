@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Tool caches
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# chess-prep data and outputs (normally stored outside the repo, but just in case)
+data/
+output/
+reports/
+chess-prep-reports/
+*.db
+*.db-wal
+*.db-shm
+*.pgn
+!tests/fixtures/*.pgn
+cheatsheet.*
+prep.md
+prep.json
+report.json
+
+# Engine binaries and weights
+engines/
+stockfish*
+!stockfish*.md
+lc0*
+*.pb.gz
+*.exe
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
