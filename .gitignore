@@ -46,3 +46,6 @@ lc0*
 .idea/
 .DS_Store
 Thumbs.db
+
+# Keep the example outputs from a real run
+!examples/**

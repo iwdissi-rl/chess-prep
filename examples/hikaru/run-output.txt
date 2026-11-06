@@ -1,0 +1,66 @@
+───────────────────────── 1/4 Fetch hikaru (Chess.com) ─────────────────────────
+
+Done. 200 new games, 0 already stored, 0 skipped (variants or unfinished). 200 
+games stored for hikaru (Chess.com).
+───────────────────────────────── 2/4 Analyze ──────────────────────────────────
+
+Engine pass done. 17032 positions analysed, 0 already known.
+╭───────────── hikaru (Chess.com) ──────────────╮
+│ Games          200 (2026-10-24 to 2026-11-05) │
+│ Recent rating  3450                           │
+│ Overall        151W 21D 28L  (80.8%)          │
+│ As white       74W 11D 12L  (82.0%)           │
+│ As black       77W 10D 16L  (79.6%)           │
+╰───────────────────────────────────────────────╯
+                      Main openings                      
+┏━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━┳━━━━━━━━━━━━┓
+┃ They play ┃ Opening              ┃ Games ┃ They score ┃
+┡━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━╇━━━━━━━━━━━━┩
+│ white     │ English Opening      │    20 │      92.5% │
+│ white     │ Sicilian Defense     │    16 │      75.0% │
+│ white     │ Caro Kann Defense    │    12 │      83.3% │
+│ black     │ Scandinavian Defense │    14 │      75.0% │
+│ black     │ Sicilian Defense     │    12 │      75.0% │
+│ black     │ Ruy Lopez Opening    │     9 │      72.2% │
+└───────────┴──────────────────────┴───────┴────────────┘
+Mistakes: 2.24 blunders and 2.19 mistakes per 100 moves; most common: 
+positional, missed tactic, hanging piece
+╭──────────────────────────────── Game plan ─────────────────────────────────╮
+│ - Avoid the English Opening if you can: they score 100.0% in it.           │
+│ - Their play is weakest in the middlegame (largest average loss per move). │
+│ - Most common tactical slip: missing their own captures and checks.        │
+╰────────────────────────────────────────────────────────────────────────────╯
+Report saved: ~/Documents/chess-prep/chesscom-hikaru/report.json
+─────────────────────────────────── 3/4 Prep ───────────────────────────────────
+                              Your decision points                              
+┏━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━┳━━━━━━┳━━━━━━━━━━━━━━━━━━━┓
+┃ They play ┃ Opening           ┃ After             ┃ Play ┃ Surprise          ┃
+┡━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━╇━━━━━━╇━━━━━━━━━━━━━━━━━━━┩
+│ white     │ English Opening   │ 1.c4 e6 2.Nf3 d5  │ O-O  │ Nbd7              │
+│           │                   │ 3.e3 Nf6 4.b3 Be7 │      │                   │
+│           │                   │ 5.Bb2             │      │                   │
+│ white     │ Sicilian Defense  │ 1.e4 c5 2.Nf3 d6  │ Bd7  │ -                 │
+│           │                   │ 3.Bb5+            │      │                   │
+│ white     │ Caro Kann Defense │ 1.e4 c6 2.Nc3 d5  │ Bg4  │ g6                │
+│           │                   │ 3.Nf3             │      │                   │
+│ black     │ Scandinavian      │ 1.e4 d5 2.exd5    │ Bd2  │ Qe2               │
+│           │ Defense           │ Qxd5 3.Nc3 Qa5    │      │                   │
+│           │                   │ 4.d4 c6 5.Nf3 Bf5 │      │                   │
+│           │                   │ 6.Bc4 e6          │      │                   │
+│ black     │ Sicilian Defense  │ 1.e4 c5 2.Nf3 e6  │ Be2  │ (same, never      │
+│           │                   │ 3.d4 cxd4 4.Nxd4  │      │ faced)            │
+│           │                   │ a6 5.c4 Nf6 6.Nc3 │      │                   │
+│           │                   │ Qc7               │      │                   │
+│ black     │ Ruy Lopez Opening │ 1.e4 e5 2.Nf3 Nc6 │ h3   │ (same, never      │
+│           │                   │ 3.Bb5 Nf6 4.d3    │      │ faced)            │
+│           │                   │ Bc5 5.c3 O-O      │      │                   │
+│           │                   │ 6.Bg5 Be7 7.Nbd2  │      │                   │
+│           │                   │ d6                │      │                   │
+└───────────┴───────────────────┴───────────────────┴──────┴───────────────────┘
+Prep tree saved: ~/Documents/chess-prep/chesscom-hikaru/prep.md
+──────────────────────────────── 4/4 Cheatsheet ────────────────────────────────
+╭─────── Cheatsheet ready ────────╮
+│ PDF  ~/Documents/chess-prep/chesscom-hikaru/cheatsheet.pdf │
+│ MD   ~/Documents/chess-prep/chesscom-hikaru/cheatsheet.md  │
+│ TXT  ~/Documents/chess-prep/chesscom-hikaru/cheatsheet.txt │
+╰─────────────────────────────────╯

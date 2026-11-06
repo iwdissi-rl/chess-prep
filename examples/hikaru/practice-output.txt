@@ -1,0 +1,165 @@
+─────────────────── Game 1/1: you are black vs hikaru clone ────────────────────
+Clone engine: Stockfish limited to about 3190 Elo, depth 8
+Clone played e4  (book, 65%)
+ 1  ♖  ♘  ♗  ♔  ♕  ♗  ♘  ♖ 
+ 2  ♙  ♙  ♙     ♙  ♙  ♙  ♙ 
+ 3     .     .     .     . 
+ 4  .     .  ♙  .     .    
+ 5     .     .     .     . 
+ 6  .     .     .     .    
+ 7  ♟  ♟  ♟  ♟  ♟  ♟  ♟  ♟ 
+ 8  ♜  ♞  ♝  ♚  ♛  ♝  ♞  ♜ 
+    h  g  f  e  d  c  b  a
+You played c5
+Clone played Nf3  (book, 56%)
+ 1  ♖  .  ♗  ♔  ♕  ♗  ♘  ♖ 
+ 2  ♙  ♙  ♙     ♙  ♙  ♙  ♙ 
+ 3     .  ♘  .     .     . 
+ 4  .     .  ♙  .     .    
+ 5     .     .     ♟     . 
+ 6  .     .     .     .    
+ 7  ♟  ♟  ♟  ♟  ♟  .  ♟  ♟ 
+ 8  ♜  ♞  ♝  ♚  ♛  ♝  ♞  ♜ 
+    h  g  f  e  d  c  b  a
+You played Nc6
+Clone played Bb5  (book, 100%)
+ 1  ♖  .     ♔  ♕  ♗  ♘  ♖ 
+ 2  ♙  ♙  ♙     ♙  ♙  ♙  ♙ 
+ 3     .  ♘  .     .     . 
+ 4  .     .  ♙  .     .    
+ 5     .     .     ♟  ♗  . 
+ 6  .     .     .  ♞  .    
+ 7  ♟  ♟  ♟  ♟  ♟  .  ♟  ♟ 
+ 8  ♜  ♞  ♝  ♚  ♛  ♝  .  ♜ 
+    h  g  f  e  d  c  b  a
+You played Nf6
+Clone played e5  (stockfish)
+ 1  ♖  .     ♔  ♕  ♗  ♘  ♖ 
+ 2  ♙  ♙  ♙     ♙  ♙  ♙  ♙ 
+ 3     .  ♘  .     .     . 
+ 4  .     .     .     .    
+ 5     .     ♙     ♟  ♗  . 
+ 6  .     ♞     .  ♞  .    
+ 7  ♟  ♟  ♟  ♟  ♟  .  ♟  ♟ 
+ 8  ♜     ♝  ♚  ♛  ♝  .  ♜ 
+    h  g  f  e  d  c  b  a
+You played Nd5
+Clone played Nc3  (stockfish)
+ 1  ♖  .     ♔  ♕  ♗     ♖ 
+ 2  ♙  ♙  ♙     ♙  ♙  ♙  ♙ 
+ 3     .  ♘  .     ♘     . 
+ 4  .     .     .     .    
+ 5     .     ♙  ♞  ♟  ♗  . 
+ 6  .     .     .  ♞  .    
+ 7  ♟  ♟  ♟  ♟  ♟  .  ♟  ♟ 
+ 8  ♜     ♝  ♚  ♛  ♝  .  ♜ 
+    h  g  f  e  d  c  b  a
+You played Nc7
+Clone played Bxc6  (stockfish)
+ 1  ♖  .     ♔  ♕  ♗     ♖ 
+ 2  ♙  ♙  ♙     ♙  ♙  ♙  ♙ 
+ 3     .  ♘  .     ♘     . 
+ 4  .     .     .     .    
+ 5     .     ♙     ♟     . 
+ 6  .     .     .  ♗  .    
+ 7  ♟  ♟  ♟  ♟  ♟  ♞  ♟  ♟ 
+ 8  ♜     ♝  ♚  ♛  ♝  .  ♜ 
+    h  g  f  e  d  c  b  a
+You played dxc6
+Clone played d3  (stockfish)
+ 1  ♖  .     ♔  ♕  ♗     ♖ 
+ 2  ♙  ♙  ♙     .  ♙  ♙  ♙ 
+ 3     .  ♘  .  ♙  ♘     . 
+ 4  .     .     .     .    
+ 5     .     ♙     ♟     . 
+ 6  .     .     .  ♟  .    
+ 7  ♟  ♟  ♟  ♟     ♞  ♟  ♟ 
+ 8  ♜     ♝  ♚  ♛  ♝  .  ♜ 
+    h  g  f  e  d  c  b  a
+You played Bg4
+Clone played h3  (stockfish)
+ 1  ♖  .     ♔  ♕  ♗     ♖ 
+ 2  .  ♙  ♙     .  ♙  ♙  ♙ 
+ 3  ♙  .  ♘  .  ♙  ♘     . 
+ 4  .  ♝  .     .     .    
+ 5     .     ♙     ♟     . 
+ 6  .     .     .  ♟  .    
+ 7  ♟  ♟  ♟  ♟     ♞  ♟  ♟ 
+ 8  ♜     ♝  ♚  ♛     .  ♜ 
+    h  g  f  e  d  c  b  a
+You played Bh5
+Clone played g4  (stockfish)
+ 1  ♖  .     ♔  ♕  ♗     ♖ 
+ 2  .     ♙     .  ♙  ♙  ♙ 
+ 3  ♙  .  ♘  .  ♙  ♘     . 
+ 4  .  ♙  .     .     .    
+ 5  ♝  .     ♙     ♟     . 
+ 6  .     .     .  ♟  .    
+ 7  ♟  ♟  ♟  ♟     ♞  ♟  ♟ 
+ 8  ♜     ♝  ♚  ♛     .  ♜ 
+    h  g  f  e  d  c  b  a
+You played Bg6
+Clone played Bd2  (stockfish)
+ 1  ♖  .     ♔  ♕  .     ♖ 
+ 2  .     ♙     ♗  ♙  ♙  ♙ 
+ 3  ♙  .  ♘  .  ♙  ♘     . 
+ 4  .  ♙  .     .     .    
+ 5     .     ♙     ♟     . 
+ 6  .  ♝  .     .  ♟  .    
+ 7  ♟  ♟  ♟  ♟     ♞  ♟  ♟ 
+ 8  ♜     ♝  ♚  ♛     .  ♜ 
+    h  g  f  e  d  c  b  a
+You played h5
+Clone played Nh4  (stockfish)
+ 1  ♖  .     ♔  ♕  .     ♖ 
+ 2  .     ♙     ♗  ♙  ♙  ♙ 
+ 3  ♙  .     .  ♙  ♘     . 
+ 4  ♘  ♙  .     .     .    
+ 5  ♟  .     ♙     ♟     . 
+ 6  .  ♝  .     .  ♟  .    
+ 7     ♟  ♟  ♟     ♞  ♟  ♟ 
+ 8  ♜     ♝  ♚  ♛     .  ♜ 
+    h  g  f  e  d  c  b  a
+You played Bh7
+Clone played f4  (stockfish)
+ 1  ♖  .     ♔  ♕  .     ♖ 
+ 2  .     .     ♗  ♙  ♙  ♙ 
+ 3  ♙  .     .  ♙  ♘     . 
+ 4  ♘  ♙  ♙     .     .    
+ 5  ♟  .     ♙     ♟     . 
+ 6  .     .     .  ♟  .    
+ 7  ♝  ♟  ♟  ♟     ♞  ♟  ♟ 
+ 8  ♜     ♝  ♚  ♛     .  ♜ 
+    h  g  f  e  d  c  b  a
+You played Ne6
+Clone played f5  (stockfish)
+ 1  ♖  .     ♔  ♕  .     ♖ 
+ 2  .     .     ♗  ♙  ♙  ♙ 
+ 3  ♙  .     .  ♙  ♘     . 
+ 4  ♘  ♙  .     .     .    
+ 5  ♟  .  ♙  ♙     ♟     . 
+ 6  .     .  ♞  .  ♟  .    
+ 7  ♝  ♟  ♟  ♟     .  ♟  ♟ 
+ 8  ♜     ♝  ♚  ♛     .  ♜ 
+    h  g  f  e  d  c  b  a
+╭───────────────────────────── Game over ─────────────────────────────╮
+│ Result: unfinished after 13 moves                                   │
+│ Clone left their book at move 4; move sources: book 3, stockfish 10 │
+╰─────────────────────────────────────────────────────────────────────╯
+PGN:
+[Event "Practice vs hikaru (Chess.com) clone"]
+[Site "?"]
+[Date "2026.11.06"]
+[Round "?"]
+[White "hikaru clone"]
+[Black "You"]
+[Result "*"]
+
+1. e4 c5 2. Nf3 Nc6 3. Bb5 Nf6 4. e5 Nd5 5. Nc3 Nc7 6. Bxc6 dxc6 7. d3 Bg4 8. h3
+Bh5 9. g4 Bg6 10. Bd2 h5 11. Nh4 Bh7 12. f4 Ne6 13. f5 *
+             Practice games vs hikaru (Chess.com) clone             
+┏━━━┳━━━━━━━━━━━━━━━━━━┳━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━┳━━━━━━━━━━━━━━┓
+┃ # ┃ Date             ┃ You   ┃ Result     ┃ Moves ┃ Left book at ┃
+┡━━━╇━━━━━━━━━━━━━━━━━━╇━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━╇━━━━━━━━━━━━━━┩
+│ 1 │ 2026-11-06 02:43 │ black │ unfinished │ 13    │ move 4       │
+└───┴──────────────────┴───────┴────────────┴───────┴──────────────┘

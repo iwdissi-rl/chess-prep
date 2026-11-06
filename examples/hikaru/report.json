@@ -1,0 +1,909 @@
+{
+  "player": {
+    "username": "hikaru",
+    "site": "chesscom",
+    "label": "hikaru (Chess.com)"
+  },
+  "generated_at": "2026-11-06 02:43",
+  "summary": {
+    "games": 200,
+    "wins": 151,
+    "draws": 21,
+    "losses": 28,
+    "score_pct": 80.8,
+    "first_date": "2026-10-24",
+    "last_date": "2026-11-05",
+    "recent_rating": 3450,
+    "avg_rating": 3440,
+    "by_color": {
+      "white": {
+        "games": 97,
+        "wins": 74,
+        "draws": 11,
+        "losses": 12,
+        "score_pct": 82.0
+      },
+      "black": {
+        "games": 103,
+        "wins": 77,
+        "draws": 10,
+        "losses": 16,
+        "score_pct": 79.6
+      }
+    },
+    "by_time_class": {
+      "blitz": {
+        "games": 117,
+        "wins": 93,
+        "draws": 11,
+        "losses": 13,
+        "score_pct": 84.2
+      },
+      "bullet": {
+        "games": 83,
+        "wins": 58,
+        "draws": 10,
+        "losses": 15,
+        "score_pct": 75.9
+      }
+    }
+  },
+  "openings": {
+    "white": [
+      {
+        "games": 20,
+        "wins": 18,
+        "draws": 1,
+        "losses": 1,
+        "score_pct": 92.5,
+        "name": "English Opening",
+        "variations": [
+          {
+            "name": "English Opening Four Knights Nimzowitsch Variation",
+            "games": 4
+          },
+          {
+            "name": "English Opening Agincourt Defense...4.b3 Bd6",
+            "games": 2
+          },
+          {
+            "name": "English Opening Agincourt Defense...6.Nc3 c5",
+            "games": 2
+          }
+        ],
+        "eco": "A13",
+        "share_pct": 20.6,
+        "main_line": "1.c4 e6 2.Nf3 d5 3.e3 Nf6 4.b3 Be7 5.Bb2 O-O 6.Nc3 c5 7.cxd5 Nxd5 8.Qc2 Nc6",
+        "game_ids": [
+          187,
+          185,
+          183,
+          179,
+          59,
+          57,
+          42,
+          33,
+          31,
+          29,
+          20,
+          17,
+          15,
+          14,
+          12,
+          9,
+          7,
+          5,
+          3,
+          1
+        ]
+      },
+      {
+        "games": 16,
+        "wins": 12,
+        "draws": 0,
+        "losses": 4,
+        "score_pct": 75.0,
+        "name": "Sicilian Defense",
+        "variations": [
+          {
+            "name": "Sicilian Defense Four Knights Variation",
+            "games": 2
+          },
+          {
+            "name": "Sicilian Defense Canal Main Line",
+            "games": 2
+          },
+          {
+            "name": "Sicilian Defense OKelly Venice System",
+            "games": 1
+          }
+        ],
+        "eco": "B45",
+        "share_pct": 16.5,
+        "main_line": "1.e4 c5 2.Nf3 d6 3.Bb5+ Bd7",
+        "game_ids": [
+          193,
+          173,
+          171,
+          169,
+          159,
+          152,
+          150,
+          141,
+          131,
+          128,
+          123,
+          120,
+          95,
+          71,
+          69,
+          53
+        ]
+      },
+      {
+        "games": 12,
+        "wins": 9,
+        "draws": 2,
+        "losses": 1,
+        "score_pct": 83.3,
+        "name": "Caro Kann Defense",
+        "variations": [
+          {
+            "name": "Caro Kann Defense Two Knights Attack",
+            "games": 3
+          },
+          {
+            "name": "Caro Kann Defense Exchange Variation...4.Bf4 Nc6",
+            "games": 2
+          },
+          {
+            "name": "Caro Kann Defense Two Knights Mindeno Retreat Line...10.h4 f6",
+            "games": 1
+          }
+        ],
+        "eco": "B10",
+        "share_pct": 12.4,
+        "main_line": "1.e4 c6 2.Nc3 d5 3.Nf3 dxe4 4.Nxe4 Nf6 5.Ng3",
+        "game_ids": [
+          199,
+          156,
+          146,
+          127,
+          108,
+          93,
+          91,
+          77,
+          47,
+          45,
+          38,
+          36
+        ]
+      },
+      {
+        "games": 11,
+        "wins": 9,
+        "draws": 2,
+        "losses": 0,
+        "score_pct": 90.9,
+        "name": "Bishop's Opening",
+        "variations": [
+          {
+            "name": "Bishop's Opening Berlin Vienna Hybrid Variation",
+            "games": 9
+          },
+          {
+            "name": "Bishop's Opening Berlin Spielmann Attack",
+            "games": 2
+          }
+        ],
+        "eco": "C28",
+        "share_pct": 11.3,
+        "main_line": "1.e4 e5 2.Nc3 Nc6 3.Bc4 Nf6 4.d3 Bb4 5.Bg5 h6 6.Bxf6 Qxf6 7.Ne2 O-O 8.O-O",
+        "game_ids": [
+          134,
+          125,
+          121,
+          99,
+          98,
+          97,
+          87,
+          86,
+          84,
+          75,
+          66
+        ]
+      },
+      {
+        "games": 5,
+        "wins": 4,
+        "draws": 1,
+        "losses": 0,
+        "score_pct": 90.0,
+        "name": "Scandinavian Defense",
+        "variations": [
+          {
+            "name": "Scandinavian Defense Closed",
+            "games": 5
+          }
+        ],
+        "eco": "B01",
+        "share_pct": 5.2,
+        "main_line": "1.e4 d5 2.Nc3 dxe4 3.Nxe4 Nf6",
+        "game_ids": [
+          198,
+          142,
+          116,
+          109,
+          106
+        ]
+      },
+      {
+        "games": 5,
+        "wins": 3,
+        "draws": 0,
+        "losses": 2,
+        "score_pct": 60.0,
+        "name": "Closed Sicilian Defense",
+        "variations": [
+          {
+            "name": "Closed Sicilian Defense Grand Prix Attack...4.Nf3 Bg7",
+            "games": 1
+          },
+          {
+            "name": "Closed Sicilian Defense Traditional Line",
+            "games": 1
+          },
+          {
+            "name": "Closed Sicilian Defense Grand Prix Attack...7.f5 exf5",
+            "games": 1
+          }
+        ],
+        "eco": "B23",
+        "share_pct": 5.2,
+        "main_line": "1.e4 c5 2.Nc3",
+        "game_ids": [
+          195,
+          190,
+          133,
+          102,
+          80
+        ]
+      }
+    ],
+    "black": [
+      {
+        "games": 14,
+        "wins": 10,
+        "draws": 1,
+        "losses": 3,
+        "score_pct": 75.0,
+        "name": "Scandinavian Defense",
+        "variations": [
+          {
+            "name": "Scandinavian Defense Mieses Kotrc Main Line...5.Nf3 Bf5",
+            "games": 3
+          },
+          {
+            "name": "Scandinavian Defense Mieses Kotrc Variation",
+            "games": 2
+          },
+          {
+            "name": "Scandinavian Defense Modern Variation",
+            "games": 2
+          }
+        ],
+        "eco": "B01",
+        "share_pct": 13.6,
+        "main_line": "1.e4 d5 2.exd5 Qxd5 3.Nc3 Qa5 4.d4 c6 5.Nf3 Bf5 6.Bc4 e6 7.O-O",
+        "game_ids": [
+          197,
+          144,
+          130,
+          129,
+          126,
+          111,
+          104,
+          101,
+          94,
+          90,
+          88,
+          82,
+          79,
+          76
+        ]
+      },
+      {
+        "games": 12,
+        "wins": 9,
+        "draws": 0,
+        "losses": 3,
+        "score_pct": 75.0,
+        "name": "Sicilian Defense",
+        "variations": [
+          {
+            "name": "Sicilian Defense Smith Morra Gambit",
+            "games": 2
+          },
+          {
+            "name": "Sicilian Defense Kan Maroczy Bind Formation",
+            "games": 2
+          },
+          {
+            "name": "Sicilian Defense Kan Maroczy Bind Formation...6.Nc3 Qc7",
+            "games": 1
+          }
+        ],
+        "eco": "B41",
+        "share_pct": 11.7,
+        "main_line": "1.e4 c5 2.Nf3 e6 3.d4 cxd4 4.Nxd4 a6 5.c4 Nf6 6.Nc3 Qc7 7.a3 Bc5",
+        "game_ids": [
+          176,
+          164,
+          160,
+          153,
+          122,
+          67,
+          65,
+          63,
+          58,
+          48,
+          25,
+          23
+        ]
+      },
+      {
+        "games": 9,
+        "wins": 5,
+        "draws": 3,
+        "losses": 1,
+        "score_pct": 72.2,
+        "name": "Ruy Lopez Opening",
+        "variations": [
+          {
+            "name": "Ruy Lopez Opening Berlin Defense",
+            "games": 4
+          },
+          {
+            "name": "Ruy Lopez Opening Berlin lHermet Berlin Wall Defense",
+            "games": 2
+          },
+          {
+            "name": "Ruy Lopez Opening Berlin Defense...6.O O Re8",
+            "games": 1
+          }
+        ],
+        "eco": "C65",
+        "share_pct": 8.7,
+        "main_line": "1.e4 e5 2.Nf3 Nc6 3.Bb5 Nf6 4.d3 Bc5 5.c3 O-O 6.Bg5 Be7 7.Nbd2 d6 8.O-O Ng4",
+        "game_ids": [
+          174,
+          172,
+          170,
+          168,
+          107,
+          56,
+          43,
+          32,
+          13
+        ]
+      },
+      {
+        "games": 7,
+        "wins": 7,
+        "draws": 0,
+        "losses": 0,
+        "score_pct": 100.0,
+        "name": "English Opening",
+        "variations": [
+          {
+            "name": "English Opening Four Knights Kingside Fianchetto Line...5.Bg2 Nxf3",
+            "games": 2
+          },
+          {
+            "name": "English Opening Agincourt Defense...3.e3 Nf6",
+            "games": 1
+          },
+          {
+            "name": "English Opening Anglo Indian Anglo Grunfeld Defense...8.d3 Nc6",
+            "games": 1
+          }
+        ],
+        "eco": "A28",
+        "share_pct": 6.8,
+        "main_line": "1.Nf3 g6",
+        "game_ids": [
+          188,
+          184,
+          182,
+          180,
+          151,
+          96,
+          21
+        ]
+      },
+      {
+        "games": 5,
+        "wins": 4,
+        "draws": 1,
+        "losses": 0,
+        "score_pct": 90.0,
+        "name": "Queen's Gambit",
+        "variations": [
+          {
+            "name": "Queen's Gambit Declined Exchange Positional Line...6.e3 O O",
+            "games": 2
+          },
+          {
+            "name": "Queen's Gambit Declined Catalan Opening...8.O O O O",
+            "games": 1
+          },
+          {
+            "name": "Queen's Gambit Declined",
+            "games": 1
+          }
+        ],
+        "eco": "D30",
+        "share_pct": 4.9,
+        "main_line": "1.d4 d5 2.c4 e6 3.Nf3 Nf6",
+        "game_ids": [
+          147,
+          54,
+          49,
+          26,
+          16
+        ]
+      },
+      {
+        "games": 5,
+        "wins": 4,
+        "draws": 0,
+        "losses": 1,
+        "score_pct": 80.0,
+        "name": "Queen's Pawn Opening",
+        "variations": [
+          {
+            "name": "Queen's Pawn Opening Chigorin Variation...3.Bf4 a6",
+            "games": 3
+          },
+          {
+            "name": "Queen's Pawn Opening Pseudo Catalan Variation",
+            "games": 1
+          },
+          {
+            "name": "Queen's Pawn Opening Torre Attack",
+            "games": 1
+          }
+        ],
+        "eco": "D00",
+        "share_pct": 4.9,
+        "main_line": "1.d4 d5 2.Nf3 Nf6",
+        "game_ids": [
+          143,
+          115,
+          105,
+          60,
+          28
+        ]
+      }
+    ]
+  },
+  "first_moves": {
+    "as_white": [
+      {
+        "move": "e4",
+        "count": 63,
+        "pct": 64.9,
+        "score_pct": 82.5
+      },
+      {
+        "move": "c4",
+        "count": 20,
+        "pct": 20.6,
+        "score_pct": 87.5
+      },
+      {
+        "move": "d4",
+        "count": 13,
+        "pct": 13.4,
+        "score_pct": 69.2
+      },
+      {
+        "move": "Nf3",
+        "count": 1,
+        "pct": 1.0,
+        "score_pct": 100.0
+      }
+    ],
+    "as_black": {
+      "1.e4": [
+        {
+          "move": "c5",
+          "count": 20,
+          "pct": 37.7,
+          "score_pct": 70.0
+        },
+        {
+          "move": "d5",
+          "count": 16,
+          "pct": 30.2,
+          "score_pct": 68.8
+        },
+        {
+          "move": "e5",
+          "count": 15,
+          "pct": 28.3,
+          "score_pct": 70.0
+        },
+        {
+          "move": "Nf6",
+          "count": 2,
+          "pct": 3.8,
+          "score_pct": 50.0
+        }
+      ],
+      "1.d4": [
+        {
+          "move": "d5",
+          "count": 12,
+          "pct": 40.0,
+          "score_pct": 87.5
+        },
+        {
+          "move": "Nf6",
+          "count": 11,
+          "pct": 36.7,
+          "score_pct": 81.8
+        },
+        {
+          "move": "g6",
+          "count": 5,
+          "pct": 16.7,
+          "score_pct": 100.0
+        },
+        {
+          "move": "e5",
+          "count": 1,
+          "pct": 3.3,
+          "score_pct": 100.0
+        }
+      ],
+      "1.Nf3": [
+        {
+          "move": "d5",
+          "count": 10,
+          "pct": 66.7,
+          "score_pct": 90.0
+        },
+        {
+          "move": "g6",
+          "count": 4,
+          "pct": 26.7,
+          "score_pct": 100.0
+        },
+        {
+          "move": "c5",
+          "count": 1,
+          "pct": 6.7,
+          "score_pct": 100.0
+        }
+      ]
+    }
+  },
+  "mistakes": {
+    "has_evals": true,
+    "moves_checked": 9234,
+    "inaccuracies": 681,
+    "mistakes": 202,
+    "blunders": 207,
+    "per_100_moves": {
+      "mistakes": 2.19,
+      "blunders": 2.24
+    },
+    "by_phase": {
+      "opening": {
+        "moves": 2400,
+        "avg_loss": 1.38,
+        "mistakes": 22,
+        "blunders": 16
+      },
+      "middlegame": {
+        "moves": 3331,
+        "avg_loss": 2.74,
+        "mistakes": 119,
+        "blunders": 108
+      },
+      "endgame": {
+        "moves": 3503,
+        "avg_loss": 2.08,
+        "mistakes": 61,
+        "blunders": 83
+      }
+    },
+    "motifs": {
+      "positional": 100,
+      "missed tactic": 49,
+      "hanging piece": 24,
+      "king safety": 12,
+      "pin": 6,
+      "back rank": 5,
+      "fork": 5,
+      "allowed mate": 4,
+      "passed pawn": 2
+    },
+    "time_trouble_blunders": 42,
+    "examples": [
+      {
+        "url": "https://www.chess.com/game/live/186037765242",
+        "move": "93.Ra5",
+        "fen": "8/8/R7/6p1/7k/3r4/4K3/8 w - - 0 93",
+        "win_pct_lost": 63.0,
+        "phase": "endgame",
+        "motif": "missed tactic",
+        "best_move": "Kxd3",
+        "clock": 11.7
+      },
+      {
+        "url": "https://www.chess.com/game/live/186165667898",
+        "move": "66.Qe2",
+        "fen": "8/8/6pk/5q1p/4p2P/6P1/1Q3P2/6K1 w - - 0 66",
+        "win_pct_lost": 49.6,
+        "phase": "endgame",
+        "motif": "missed tactic",
+        "best_move": "Qh8#",
+        "clock": 17.1
+      },
+      {
+        "url": "https://www.chess.com/game/live/187781887253",
+        "move": "24...Nf6",
+        "fen": "3k1b1r/pp1n2pp/3PQ3/5B2/8/5P1P/P4PK1/2q4R b - - 0 24",
+        "win_pct_lost": 49.6,
+        "phase": "middlegame",
+        "motif": "allowed mate",
+        "best_move": "Qc6",
+        "clock": 36.8
+      },
+      {
+        "url": "https://www.chess.com/game/live/186618007298",
+        "move": "22...Kh3",
+        "fen": "r3q3/pp2np1r/2np2p1/2p1Pp2/2b2R1P/2NP2P1/PPP2KRk/8 b - - 0 22",
+        "win_pct_lost": 49.6,
+        "phase": "middlegame",
+        "motif": "allowed mate",
+        "best_move": "Kh3",
+        "clock": 41.4
+      },
+      {
+        "url": "https://www.chess.com/game/live/186618007298",
+        "move": "24...Kh3",
+        "fen": "r3q3/pp2np1r/2np2p1/2p1Pp2/2b2R1P/2NP2P1/PPP2KRk/8 b - - 0 24",
+        "win_pct_lost": 49.6,
+        "phase": "middlegame",
+        "motif": "allowed mate",
+        "best_move": "Kh3",
+        "clock": 39.4
+      },
+      {
+        "url": "https://www.chess.com/game/live/186131537420",
+        "move": "56...Nd3",
+        "fen": "8/8/3N4/3pn3/1R6/4k3/2r5/5K2 b - - 0 56",
+        "win_pct_lost": 48.2,
+        "phase": "endgame",
+        "motif": "missed tactic",
+        "best_move": "Rf2+",
+        "clock": 16.1
+      },
+      {
+        "url": "https://www.chess.com/game/live/185886450058",
+        "move": "18.Ng4",
+        "fen": "r3r1k1/pbq1bpp1/1p2pn1p/2p1N3/2PP3Q/1P6/PBB2PPP/2KRR3 w - - 0 18",
+        "win_pct_lost": 47.6,
+        "phase": "middlegame",
+        "motif": "missed tactic",
+        "best_move": "dxc5",
+        "clock": 155.1
+      },
+      {
+        "url": "https://www.chess.com/game/live/187783086585",
+        "move": "45.Qe6+",
+        "fen": "6k1/p5p1/1p3pq1/2rNQRb1/6Pp/P6P/5P2/6K1 w - - 0 45",
+        "win_pct_lost": 45.9,
+        "phase": "endgame",
+        "motif": "missed tactic",
+        "best_move": "Ne7+",
+        "clock": 10.1
+      },
+      {
+        "url": "https://www.chess.com/game/live/186165432764",
+        "move": "10.O-O",
+        "fen": "rn1q1rk1/p2pbpp1/bp2pn1p/8/3P1B2/2PB1N2/PP1N1PPP/R2QK2R w KQ - 0 10",
+        "win_pct_lost": 45.2,
+        "phase": "opening",
+        "motif": "hanging piece",
+        "best_move": "Ne4",
+        "clock": 170.6
+      },
+      {
+        "url": "https://www.chess.com/game/live/187783087147",
+        "move": "47...Rd3+",
+        "fen": "8/2R2pkp/rN4p1/2PK4/P7/4r1P1/7P/8 b - - 0 47",
+        "win_pct_lost": 42.9,
+        "phase": "endgame",
+        "motif": "positional",
+        "best_move": "Re2",
+        "clock": 26.5
+      },
+      {
+        "url": "https://www.chess.com/game/live/187780086051",
+        "move": "62...Rb2",
+        "fen": "8/8/8/k5p1/6P1/pr2b3/R7/3K4 b - - 0 62",
+        "win_pct_lost": 41.3,
+        "phase": "endgame",
+        "motif": "hanging piece",
+        "best_move": "Kb4",
+        "clock": 17.8
+      },
+      {
+        "url": "https://www.chess.com/game/live/187178295265",
+        "move": "29.Kh2",
+        "fen": "5r2/5ppk/6qp/2p5/1pBr3P/2bPR1P1/4QP2/1R4K1 w - - 0 29",
+        "win_pct_lost": 40.2,
+        "phase": "middlegame",
+        "motif": "positional",
+        "best_move": "h5",
+        "clock": 34.1
+      }
+    ]
+  },
+  "clock": {
+    "has_clocks": true,
+    "time_class": "blitz",
+    "games_with_clocks": 117,
+    "avg_think_by_phase": {
+      "opening": 2.1,
+      "middlegame": 4.3,
+      "endgame": 1.9
+    },
+    "longest_thinks": [
+      {
+        "move": 17,
+        "avg_seconds": 5.9,
+        "samples": 116
+      },
+      {
+        "move": 19,
+        "avg_seconds": 5.2,
+        "samples": 113
+      },
+      {
+        "move": 21,
+        "avg_seconds": 5.1,
+        "samples": 112
+      },
+      {
+        "move": 22,
+        "avg_seconds": 4.9,
+        "samples": 110
+      },
+      {
+        "move": 12,
+        "avg_seconds": 4.8,
+        "samples": 117
+      }
+    ],
+    "time_trouble_games": 49,
+    "time_trouble_pct": 24.5,
+    "time_trouble_score_pct": 75.5,
+    "calm_score_pct": 82.5,
+    "typical_time_trouble_move": 45
+  },
+  "critical_positions": [
+    {
+      "fen": "rnb1kbnr/pp2pppp/2p5/q7/3P4/2N2N2/PPP2PPP/R1BQKB1R b KQkq - 0 5",
+      "line": "1.e4 d5 2.exd5 Qxd5 3.d4 Qa5+ 4.Nc3 c6 5.Nf3",
+      "they_play": "black",
+      "times_reached": 4,
+      "score_pct": 37.5,
+      "record": "1W 1D 2L",
+      "usual_move": "Bf5",
+      "eval_cp": 72
+    }
+  ],
+  "endgames": {
+    "games_reaching_endgame": 158,
+    "score_pct": 81.6,
+    "record": "120W 18D 20L",
+    "moves_checked": 3503,
+    "avg_loss": 2.08,
+    "blunders": 83
+  },
+  "losses": {
+    "count": 28,
+    "by_termination": {
+      "resignation": 21,
+      "checkmate": 4,
+      "timeout": 3
+    },
+    "avg_length_moves": 46.2,
+    "worst_openings": [
+      {
+        "opening": "Closed Sicilian Defense",
+        "they_play": "white",
+        "games": 5,
+        "wins": 3,
+        "draws": 0,
+        "losses": 2,
+        "score_pct": 60.0
+      },
+      {
+        "opening": "Ruy Lopez Opening",
+        "they_play": "black",
+        "games": 9,
+        "wins": 5,
+        "draws": 3,
+        "losses": 1,
+        "score_pct": 72.2
+      },
+      {
+        "opening": "Sicilian Defense",
+        "they_play": "white",
+        "games": 16,
+        "wins": 12,
+        "draws": 0,
+        "losses": 4,
+        "score_pct": 75.0
+      },
+      {
+        "opening": "Scandinavian Defense",
+        "they_play": "black",
+        "games": 14,
+        "wins": 10,
+        "draws": 1,
+        "losses": 3,
+        "score_pct": 75.0
+      },
+      {
+        "opening": "Sicilian Defense",
+        "they_play": "black",
+        "games": 12,
+        "wins": 9,
+        "draws": 0,
+        "losses": 3,
+        "score_pct": 75.0
+      }
+    ],
+    "best_openings": [
+      {
+        "opening": "English Opening",
+        "they_play": "black",
+        "games": 7,
+        "wins": 7,
+        "draws": 0,
+        "losses": 0,
+        "score_pct": 100.0
+      },
+      {
+        "opening": "English Opening",
+        "they_play": "white",
+        "games": 20,
+        "wins": 18,
+        "draws": 1,
+        "losses": 1,
+        "score_pct": 92.5
+      },
+      {
+        "opening": "Bishop's Opening",
+        "they_play": "white",
+        "games": 11,
+        "wins": 9,
+        "draws": 2,
+        "losses": 0,
+        "score_pct": 90.9
+      }
+    ]
+  },
+  "notes": [
+    "Avoid the English Opening if you can: they score 100.0% in it.",
+    "Their play is weakest in the middlegame (largest average loss per move).",
+    "Most common tactical slip: missing their own captures and checks."
+  ]
+}
