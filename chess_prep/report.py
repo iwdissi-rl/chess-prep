@@ -364,7 +364,8 @@ def _mistakes(games, moves) -> dict:
                 motifs[motif] += 1
                 if trouble_limit and m["clock_seconds"] is not None and m["clock_seconds"] < trouble_limit:
                     out["time_trouble_blunders"] += 1
-                best = uci_to_san(board_before, m["best_before"])
+                # A shallow search can name the blunder itself as best; show nothing then.
+                best = uci_to_san(board_before, m["best_before"]) if m["best_before"] != m["uci"] else None
                 board_before.fullmove_number = m["ply"] // 2 + 1
                 examples.append(
                     {
@@ -393,7 +394,11 @@ def _mistakes(games, moves) -> dict:
         for phase, ph in out["by_phase"].items():
             ph["avg_loss"] = round(loss_sum[phase] / ph["moves"], 2) if ph["moves"] else 0.0
     out["motifs"] = dict(motifs.most_common())
-    out["examples"] = sorted(examples, key=lambda e: -e["win_pct_lost"])[:12]
+    # The same position can come up more than once in a game (repetitions); list it once.
+    unique: dict[tuple, dict] = {}
+    for ex in sorted(examples, key=lambda e: -e["win_pct_lost"]):
+        unique.setdefault((ex["url"], " ".join(ex["fen"].split()[:4]), ex["move"].split(".")[-1]), ex)
+    out["examples"] = list(unique.values())[:12]
     return out
 
 
@@ -604,7 +609,11 @@ def _notes(rep: dict) -> list[str]:
         )
     for x in rep["losses"]["best_openings"][:1]:
         if x["score_pct"] >= 70:
-            notes.append(f"Avoid the {x['opening']} if you can: they score {x['score_pct']}% in it.")
+            you = "Black" if x["they_play"] == "white" else "White"
+            notes.append(
+                f"Avoid the {x['opening']} when you have {you} if you can: "
+                f"they score {x['score_pct']}% in it with {x['they_play'].capitalize()} ({x['games']} games)."
+            )
 
     c = rep["clock"]
     if c.get("has_clocks") and c["time_trouble_games"] >= 5 and c["calm_score_pct"] - c["time_trouble_score_pct"] >= 10:

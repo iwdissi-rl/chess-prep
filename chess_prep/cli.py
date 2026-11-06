@@ -203,6 +203,7 @@ def do_engine_pass(player: Player, depth: int, workers: int | None) -> bool:
     console.print(
         f"[green]Engine pass done.[/] {stats.analysed} positions analysed, {stats.cached} already known"
         + (f", [yellow]{stats.errors} failed[/]" if stats.errors else "")
+        + (f", {stats.rechecked} re-checked deeper" if stats.rechecked else "")
         + "."
     )
     return True

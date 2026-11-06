@@ -45,11 +45,11 @@ Their main line: `1.c4 e6 2.Nf3 d5 3.e3 Nf6 4.b3 Be7 5.Bb2 O-O 6.Nc3 c5 7.cxd5 N
 **Your decision point** after `1.c4 e6 2.Nf3 d5 3.e3 Nf6 4.b3 Be7 5.Bb2` (4 games):
 
 - They have faced **O-O** 4x and scored 100.0%
-- Engine: **O-O** (-0.14 for you), line `O-O Nc3 Nbd7 Be2 b6 cxd5`
-- Engine: **Nbd7** (-0.17 for you), line `Nbd7 Nc3 O-O d4 b6 Bd3`
-- Engine: **c5** (-0.17 for you), line `c5 cxd5 exd5 d4 O-O Nc3`
+- Engine: **O-O** (-0.13 for you), line `O-O Nc3 a6 Be2 b6 cxd5`
+- Engine: **b6** (-0.14 for you), line `b6 cxd5 exd5 d4 Bd6 Nc3`
+- Engine: **Nbd7** (-0.16 for you), line `Nbd7 Nc3 O-O d4 b6 Bd3`
 - Recommended: **O-O**
-- Surprise try: **Nbd7** (-0.17). They have never faced it here.
+- Surprise try: **b6** (-0.14). They have never faced it here.
 
 ### Sicilian Defense (B45)
 16 games, they score 75.0%.
@@ -104,9 +104,9 @@ Their main line: `1.e4 c5 2.Nf3 d6 3.Bb5+ Bd7`
 - They have faced **Bd7** 2x and scored 100.0%
 - They have faced **Nd7** 1x and scored 0.0%
 - They have faced **Nc6** 1x and scored 100.0%
-- Engine: **Bd7** (-0.16 for you), line `Bd7 c4 a6 Bxd7+ Nxd7 O-O`
-- Engine: **Nd7** (-0.20 for you), line `Nd7 O-O a6 Bd3 Ngf6 Re1`
-- Engine: **Nc6** (-0.36 for you), line `Nc6 O-O Bd7 Re1 a6 Bxc6`
+- Engine: **Bd7** (-0.17 for you), line `Bd7 Bxd7+ Qxd7 O-O e6 Re1`
+- Engine: **Nd7** (-0.21 for you), line `Nd7 O-O a6 Bd3 g6 Re1`
+- Engine: **Nc6** (-0.42 for you), line `Nc6 O-O Bd7 Re1 Nf6 c3`
 - Recommended: **Bd7**
 
 ### Caro Kann Defense (B10)
@@ -150,11 +150,11 @@ Their main line: `1.e4 c6 2.Nc3 d5 3.Nf3 dxe4 4.Nxe4 Nf6 5.Ng3`
 - They have faced **dxe4** 2x and scored 75.0%
 - They have faced **Nf6** 1x and scored 100.0%
 - They have faced **Bg4** 1x and scored 100.0%
-- Engine: **Bg4** (-0.26 for you), line `Bg4 d4 e6 h3 Bxf3 gxf3`
+- Engine: **Bg4** (-0.18 for you), line `Bg4 d4 Nf6 h3 Bxf3 gxf3`
 - Engine: **dxe4** (-0.28 for you), line `dxe4 Nxe4 Nf6 Qe2 Nxe4 Qxe4`
-- Engine: **g6** (-0.39 for you), line `g6 d4 Bg7 Bd3 dxe4 Nxe4`
+- Engine: **g6** (-0.44 for you), line `g6 d4 Bg7 Bd3 dxe4 Nxe4`
 - Recommended: **Bg4**
-- Surprise try: **g6** (-0.39). They have never faced it here.
+- Surprise try: **g6** (-0.44). They have never faced it here.
 
 ## When they have Black (you play White)
 
@@ -191,11 +191,11 @@ Their main line: `1.e4 d5 2.exd5 Qxd5 3.Nc3 Qa5 4.d4 c6 5.Nf3 Bf5 6.Bc4 e6 7.O-O
 
 - They have faced **O-O** 2x and scored 50.0%
 - They have faced **Bd2** 1x and scored 50.0%
-- Engine: **Bd2** (+0.63 for you), line `Bd2 Nf6 Nd5 Qd8 Nxf6+ Qxf6`
-- Engine: **Qe2** (+0.45 for you), line `Qe2 Nf6 Bd2 Bb4 O-O-O Nbd7`
-- Engine: **Nh4** (+0.43 for you), line `Nh4 Nf6 O-O Nbd7 Nxf5 Qxf5`
+- Engine: **Bd2** (+0.66 for you), line `Bd2 Nf6 Nd5 Qd8 Nxf6+ Qxf6`
+- Engine: **Qe2** (+0.56 for you), line `Qe2 Nf6 Bd2 Bb4 a3 Bxc3`
+- Engine: **O-O** (+0.41 for you), line `O-O Nf6 Nh4 Nbd7 Nxf5 Qxf5`
 - Recommended: **Bd2**
-- Surprise try: **Qe2** (+0.45). They have never faced it here.
+- Surprise try: **Qe2** (+0.56). They have never faced it here.
 
 ### Sicilian Defense (B41)
 12 games, they score 75.0%.
@@ -232,10 +232,11 @@ Their main line: `1.e4 c5 2.Nf3 e6 3.d4 cxd4 4.Nxd4 a6 5.c4 Nf6 6.Nc3 Qc7 7.a3 B
 **Your decision point** after `1.e4 c5 2.Nf3 e6 3.d4 cxd4 4.Nxd4 a6 5.c4 Nf6 6.Nc3 Qc7` (3 games):
 
 - They have faced **a3** 3x and scored 66.7%
-- Engine: **Be2** (+0.56 for you), line `Be2 Nc6 a3 Nxd4 Qxd4 Bc5`
-- Engine: **a3** (+0.54 for you), line `a3 b6 Be3 Bb7 f3 Be7`
-- Engine: **f4** (+0.47 for you), line `f4 Bb4 e5 Ne4 Qf3 d5`
-- Recommended: **Be2** (they have never faced it here)
+- Engine: **a3** (+0.60 for you), line `a3 b6 Be3 Be7 f3 O-O`
+- Engine: **Be2** (+0.58 for you), line `Be2 Bb4 Nc2 Bd6 Qd3 O-O`
+- Engine: **f4** (+0.49 for you), line `f4 Bb4 e5 Ne4 Qf3 Nxc3`
+- Recommended: **a3**
+- Surprise try: **Be2** (+0.58). They have never faced it here.
 
 ### Ruy Lopez Opening (C65)
 9 games, they score 72.2%.
@@ -266,7 +267,7 @@ Their main line: `1.e4 e5 2.Nf3 Nc6 3.Bb5 Nf6 4.d3 Bc5 5.c3 O-O 6.Bg5 Be7 7.Nbd2
 **Your decision point** after `1.e4 e5 2.Nf3 Nc6 3.Bb5 Nf6 4.d3 Bc5 5.c3 O-O 6.Bg5 Be7 7.Nbd2 d6` (3 games):
 
 - They have faced **O-O** 3x and scored 83.3%
-- Engine: **h3** (+0.12 for you), line `h3 Ne8 Be3 f5 exf5 Bxf5`
-- Engine: **O-O** (+0.09 for you), line `O-O h6 Bh4 Nh5 Bg3 Bf6`
-- Engine: **Nf1** (+0.01 for you), line `Nf1 Nh5 Bxe7 Nxe7 Ne3 c6`
+- Engine: **h3** (+0.10 for you), line `h3 Ne8 Be3 f5 exf5 Bxf5`
+- Engine: **O-O** (+0.03 for you), line `O-O h6 Be3 Ng4 Re1 a6`
+- Engine: **Be3** (+0.03 for you), line `Be3 Ng4 Nf1 f5 exf5 Bxf5`
 - Recommended: **h3** (they have never faced it here)

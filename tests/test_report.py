@@ -84,3 +84,43 @@ def test_classify_missed_tactic():
         classify_blunder(after, None, chess.BLACK, board_before=before, played_uci="a7a6", best_before_uci="c8g4")
         == "missed tactic"
     )
+
+
+def test_blunder_never_names_itself_as_best(alice_db):
+    # A shallow search can call the played move best and still score the result as lost.
+    conn = db.connect(alice_db.db_path)
+    conn.execute("DELETE FROM evals")
+    gid = conn.execute("SELECT id FROM games WHERE url LIKE '%fixture07'").fetchone()[0]
+    m = conn.execute("SELECT uci, epd_before, epd_after FROM moves WHERE game_id = ? AND ply = 8", (gid,)).fetchone()
+    _insert_eval(conn, m["epd_before"], 30, m["uci"])
+    _insert_eval(conn, m["epd_after"], -400, None)
+    conn.commit()
+    conn.close()
+    ex = build_report(alice_db.db_path, alice_db)["mistakes"]["examples"][0]
+    assert ex["move"] == "5.d3"
+    assert ex["best_move"] is None
+
+
+def test_avoid_note_names_the_colour():
+    from chess_prep.report import _notes
+
+    rep = {
+        "summary": {
+            "score_pct": 50,
+            "by_color": {"white": {"games": 1, "score_pct": 50}, "black": {"games": 1, "score_pct": 50}},
+        },
+        "losses": {
+            "count": 0,
+            "by_termination": {},
+            "worst_openings": [],
+            "best_openings": [
+                {"opening": "English Opening", "they_play": "black", "games": 7, "score_pct": 100.0},
+            ],
+        },
+        "clock": {},
+        "mistakes": {"has_evals": False},
+        "endgames": {"games_reaching_endgame": 0},
+    }
+    notes = _notes(rep)
+    expected = "Avoid the English Opening when you have White if you can: they score 100.0% in it with Black (7 games)."
+    assert expected in notes

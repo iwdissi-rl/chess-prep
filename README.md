@@ -117,7 +117,8 @@ Done. 200 new games, 0 already stored, 0 skipped (variants or unfinished). 200
 games stored for hikaru (Chess.com).
 ───────────────────────────────── 2/4 Analyze ──────────────────────────────────
 
-Engine pass done. 17032 positions analysed, 0 already known.
+Engine pass done. 17032 positions analysed, 0 already known, 25 re-checked 
+deeper.
 ╭───────────── hikaru (Chess.com) ──────────────╮
 │ Games          200 (2026-10-24 to 2026-11-05) │
 │ Recent rating  3450                           │
@@ -136,20 +137,21 @@ Engine pass done. 17032 positions analysed, 0 already known.
 │ black     │ Sicilian Defense     │    12 │      75.0% │
 │ black     │ Ruy Lopez Opening    │     9 │      72.2% │
 └───────────┴──────────────────────┴───────┴────────────┘
-Mistakes: 2.24 blunders and 2.19 mistakes per 100 moves; most common: 
+Mistakes: 2.26 blunders and 2.23 mistakes per 100 moves; most common: 
 positional, missed tactic, hanging piece
-╭──────────────────────────────── Game plan ─────────────────────────────────╮
-│ - Avoid the English Opening if you can: they score 100.0% in it.           │
-│ - Their play is weakest in the middlegame (largest average loss per move). │
-│ - Most common tactical slip: missing their own captures and checks.        │
-╰────────────────────────────────────────────────────────────────────────────╯
+╭───────────────────────────────── Game plan ──────────────────────────────────╮
+│ - Avoid the English Opening when you have White if you can: they score       │
+│ 100.0% in it with Black (7 games).                                           │
+│ - Their play is weakest in the middlegame (largest average loss per move).   │
+│ - Most common tactical slip: missing their own captures and checks.          │
+╰──────────────────────────────────────────────────────────────────────────────╯
 Report saved: ~/Documents/chess-prep/chesscom-hikaru/report.json
 ─────────────────────────────────── 3/4 Prep ───────────────────────────────────
                               Your decision points                              
 ┏━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━┳━━━━━━┳━━━━━━━━━━━━━━━━━━━┓
 ┃ They play ┃ Opening           ┃ After             ┃ Play ┃ Surprise          ┃
 ┡━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━╇━━━━━━╇━━━━━━━━━━━━━━━━━━━┩
-│ white     │ English Opening   │ 1.c4 e6 2.Nf3 d5  │ O-O  │ Nbd7              │
+│ white     │ English Opening   │ 1.c4 e6 2.Nf3 d5  │ O-O  │ b6                │
 │           │                   │ 3.e3 Nf6 4.b3 Be7 │      │                   │
 │           │                   │ 5.Bb2             │      │                   │
 │ white     │ Sicilian Defense  │ 1.e4 c5 2.Nf3 d6  │ Bd7  │ -                 │
@@ -160,8 +162,8 @@ Report saved: ~/Documents/chess-prep/chesscom-hikaru/report.json
 │           │ Defense           │ Qxd5 3.Nc3 Qa5    │      │                   │
 │           │                   │ 4.d4 c6 5.Nf3 Bf5 │      │                   │
 │           │                   │ 6.Bc4 e6          │      │                   │
-│ black     │ Sicilian Defense  │ 1.e4 c5 2.Nf3 e6  │ Be2  │ (same, never      │
-│           │                   │ 3.d4 cxd4 4.Nxd4  │      │ faced)            │
+│ black     │ Sicilian Defense  │ 1.e4 c5 2.Nf3 e6  │ a3   │ Be2               │
+│           │                   │ 3.d4 cxd4 4.Nxd4  │      │                   │
 │           │                   │ a6 5.c4 Nf6 6.Nc3 │      │                   │
 │           │                   │ Qc7               │      │                   │
 │ black     │ Ruy Lopez Opening │ 1.e4 e5 2.Nf3 Nc6 │ h3   │ (same, never      │
@@ -172,11 +174,11 @@ Report saved: ~/Documents/chess-prep/chesscom-hikaru/report.json
 └───────────┴───────────────────┴───────────────────┴──────┴───────────────────┘
 Prep tree saved: ~/Documents/chess-prep/chesscom-hikaru/prep.md
 ──────────────────────────────── 4/4 Cheatsheet ────────────────────────────────
-╭─────── Cheatsheet ready ────────╮
+╭──────── Cheatsheet ready ────────╮
 │ PDF  ~/Documents/chess-prep/chesscom-hikaru/cheatsheet.pdf │
 │ MD   ~/Documents/chess-prep/chesscom-hikaru/cheatsheet.md  │
 │ TXT  ~/Documents/chess-prep/chesscom-hikaru/cheatsheet.txt │
-╰─────────────────────────────────╯
+╰──────────────────────────────────╯
 ```
 
 Open `cheatsheet.pdf` to see the one-page summary. `prep.md` in the same folder has the full opening tree. The files from this run are in [`examples/hikaru/`](examples/hikaru/), including [the PDF](examples/hikaru/cheatsheet.pdf).
@@ -215,7 +217,7 @@ For demos and scripts, `practice` can run without typing: `--moves "e4 Nf3 Bc4"`
 
 **Fetching.** Chess.com publishes each player's games month by month, and Lichess streams them on request. `chessprep` reads the newest games first, skips variants such as Chess960, and stores each player in a small SQLite database. A name on Chess.com and the same name on Lichess are treated as two different people.
 
-**Analysis.** Every unique position in the games is evaluated once by Stockfish and cached, so fetching more games later only analyses the new positions. A move counts as an inaccuracy, mistake or blunder when it drops the player's winning chances by 5, 10 or 15 percentage points. Lichess uses the same idea. Blunders are sorted by type based on the engine's best reply, for example a capture of an undefended piece (hanging piece) or a knight attacking two pieces (fork). The report also covers results by colour and speed, clock use and time trouble, endgames, and positions they reached several times and scored badly from.
+**Analysis.** Every unique position in the games is evaluated once by Stockfish and cached, so fetching more games later only analyses the new positions. When a quick search contradicts itself (its own best move loses a lot one move later), that position is checked again at a greater depth. A move counts as an inaccuracy, mistake or blunder when it drops the player's winning chances by 5, 10 or 15 percentage points. Lichess uses the same idea. Blunders are sorted by type based on the engine's best reply, for example a capture of an undefended piece (hanging piece) or a knight attacking two pieces (fork). The report also covers results by colour and speed, clock use and time trouble, endgames, and positions they reached several times and scored badly from.
 
 **Prep.** For their three most played openings with each colour, `chessprep` builds a tree of the moves that were actually played, with how often each was played and how they scored. It then finds the most common position where it is your move, asks Stockfish for the best replies, and suggests a "surprise" move that is nearly as good but that they have never faced there.
 

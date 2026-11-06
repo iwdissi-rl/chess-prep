@@ -60,29 +60,29 @@
         "engine": [
           {
             "move": "O-O",
+            "cp": -13,
+            "pv": "O-O Nc3 a6 Be2 b6 cxd5"
+          },
+          {
+            "move": "b6",
             "cp": -14,
-            "pv": "O-O Nc3 Nbd7 Be2 b6 cxd5"
+            "pv": "b6 cxd5 exd5 d4 Bd6 Nc3"
           },
           {
             "move": "Nbd7",
-            "cp": -17,
+            "cp": -16,
             "pv": "Nbd7 Nc3 O-O d4 b6 Bd3"
-          },
-          {
-            "move": "c5",
-            "cp": -17,
-            "pv": "c5 cxd5 exd5 d4 O-O Nc3"
           }
         ],
         "recommended": {
           "move": "O-O",
-          "cp": -14,
-          "pv": "O-O Nc3 Nbd7 Be2 b6 cxd5"
+          "cp": -13,
+          "pv": "O-O Nc3 a6 Be2 b6 cxd5"
         },
         "surprise": {
-          "move": "Nbd7",
-          "cp": -17,
-          "pv": "Nbd7 Nc3 O-O d4 b6 Bd3"
+          "move": "b6",
+          "cp": -14,
+          "pv": "b6 cxd5 exd5 d4 Bd6 Nc3"
         }
       },
       "struggles": []
@@ -159,24 +159,24 @@
         "engine": [
           {
             "move": "Bd7",
-            "cp": -16,
-            "pv": "Bd7 c4 a6 Bxd7+ Nxd7 O-O"
+            "cp": -17,
+            "pv": "Bd7 Bxd7+ Qxd7 O-O e6 Re1"
           },
           {
             "move": "Nd7",
-            "cp": -20,
-            "pv": "Nd7 O-O a6 Bd3 Ngf6 Re1"
+            "cp": -21,
+            "pv": "Nd7 O-O a6 Bd3 g6 Re1"
           },
           {
             "move": "Nc6",
-            "cp": -36,
-            "pv": "Nc6 O-O Bd7 Re1 a6 Bxc6"
+            "cp": -42,
+            "pv": "Nc6 O-O Bd7 Re1 Nf6 c3"
           }
         ],
         "recommended": {
           "move": "Bd7",
-          "cp": -16,
-          "pv": "Bd7 c4 a6 Bxd7+ Nxd7 O-O"
+          "cp": -17,
+          "pv": "Bd7 Bxd7+ Qxd7 O-O e6 Re1"
         },
         "surprise": null
       },
@@ -242,8 +242,8 @@
         "engine": [
           {
             "move": "Bg4",
-            "cp": -26,
-            "pv": "Bg4 d4 e6 h3 Bxf3 gxf3"
+            "cp": -18,
+            "pv": "Bg4 d4 Nf6 h3 Bxf3 gxf3"
           },
           {
             "move": "dxe4",
@@ -252,18 +252,18 @@
           },
           {
             "move": "g6",
-            "cp": -39,
+            "cp": -44,
             "pv": "g6 d4 Bg7 Bd3 dxe4 Nxe4"
           }
         ],
         "recommended": {
           "move": "Bg4",
-          "cp": -26,
-          "pv": "Bg4 d4 e6 h3 Bxf3 gxf3"
+          "cp": -18,
+          "pv": "Bg4 d4 Nf6 h3 Bxf3 gxf3"
         },
         "surprise": {
           "move": "g6",
-          "cp": -39,
+          "cp": -44,
           "pv": "g6 d4 Bg7 Bd3 dxe4 Nxe4"
         }
       },
@@ -319,29 +319,29 @@
         "engine": [
           {
             "move": "Bd2",
-            "cp": 63,
+            "cp": 66,
             "pv": "Bd2 Nf6 Nd5 Qd8 Nxf6+ Qxf6"
           },
           {
             "move": "Qe2",
-            "cp": 45,
-            "pv": "Qe2 Nf6 Bd2 Bb4 O-O-O Nbd7"
+            "cp": 56,
+            "pv": "Qe2 Nf6 Bd2 Bb4 a3 Bxc3"
           },
           {
-            "move": "Nh4",
-            "cp": 43,
-            "pv": "Nh4 Nf6 O-O Nbd7 Nxf5 Qxf5"
+            "move": "O-O",
+            "cp": 41,
+            "pv": "O-O Nf6 Nh4 Nbd7 Nxf5 Qxf5"
           }
         ],
         "recommended": {
           "move": "Bd2",
-          "cp": 63,
+          "cp": 66,
           "pv": "Bd2 Nf6 Nd5 Qd8 Nxf6+ Qxf6"
         },
         "surprise": {
           "move": "Qe2",
-          "cp": 45,
-          "pv": "Qe2 Nf6 Bd2 Bb4 O-O-O Nbd7"
+          "cp": 56,
+          "pv": "Qe2 Nf6 Bd2 Bb4 a3 Bxc3"
         }
       },
       "struggles": []
@@ -391,30 +391,30 @@
         ],
         "engine": [
           {
-            "move": "Be2",
-            "cp": 56,
-            "pv": "Be2 Nc6 a3 Nxd4 Qxd4 Bc5"
+            "move": "a3",
+            "cp": 60,
+            "pv": "a3 b6 Be3 Be7 f3 O-O"
           },
           {
-            "move": "a3",
-            "cp": 54,
-            "pv": "a3 b6 Be3 Bb7 f3 Be7"
+            "move": "Be2",
+            "cp": 58,
+            "pv": "Be2 Bb4 Nc2 Bd6 Qd3 O-O"
           },
           {
             "move": "f4",
-            "cp": 47,
-            "pv": "f4 Bb4 e5 Ne4 Qf3 d5"
+            "cp": 49,
+            "pv": "f4 Bb4 e5 Ne4 Qf3 Nxc3"
           }
         ],
         "recommended": {
-          "move": "Be2",
-          "cp": 56,
-          "pv": "Be2 Nc6 a3 Nxd4 Qxd4 Bc5"
+          "move": "a3",
+          "cp": 60,
+          "pv": "a3 b6 Be3 Be7 f3 O-O"
         },
         "surprise": {
           "move": "Be2",
-          "cp": 56,
-          "pv": "Be2 Nc6 a3 Nxd4 Qxd4 Bc5"
+          "cp": 58,
+          "pv": "Be2 Bb4 Nc2 Bd6 Qd3 O-O"
         }
       },
       "struggles": []
@@ -459,28 +459,28 @@
         "engine": [
           {
             "move": "h3",
-            "cp": 12,
+            "cp": 10,
             "pv": "h3 Ne8 Be3 f5 exf5 Bxf5"
           },
           {
             "move": "O-O",
-            "cp": 9,
-            "pv": "O-O h6 Bh4 Nh5 Bg3 Bf6"
+            "cp": 3,
+            "pv": "O-O h6 Be3 Ng4 Re1 a6"
           },
           {
-            "move": "Nf1",
-            "cp": 1,
-            "pv": "Nf1 Nh5 Bxe7 Nxe7 Ne3 c6"
+            "move": "Be3",
+            "cp": 3,
+            "pv": "Be3 Ng4 Nf1 f5 exf5 Bxf5"
           }
         ],
         "recommended": {
           "move": "h3",
-          "cp": 12,
+          "cp": 10,
           "pv": "h3 Ne8 Be3 f5 exf5 Bxf5"
         },
         "surprise": {
           "move": "h3",
-          "cp": 12,
+          "cp": 10,
           "pv": "h3 Ne8 Be3 f5 exf5 Bxf5"
         }
       },

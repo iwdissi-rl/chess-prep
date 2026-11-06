@@ -4,7 +4,7 @@
     "site": "chesscom",
     "label": "hikaru (Chess.com)"
   },
-  "generated_at": "2026-11-06 02:43",
+  "generated_at": "2026-11-06 15:57",
   "summary": {
     "games": 200,
     "wins": 151,
@@ -592,51 +592,51 @@
   "mistakes": {
     "has_evals": true,
     "moves_checked": 9234,
-    "inaccuracies": 681,
-    "mistakes": 202,
-    "blunders": 207,
+    "inaccuracies": 673,
+    "mistakes": 206,
+    "blunders": 209,
     "per_100_moves": {
-      "mistakes": 2.19,
-      "blunders": 2.24
+      "mistakes": 2.23,
+      "blunders": 2.26
     },
     "by_phase": {
       "opening": {
         "moves": 2400,
-        "avg_loss": 1.38,
-        "mistakes": 22,
+        "avg_loss": 1.39,
+        "mistakes": 19,
         "blunders": 16
       },
       "middlegame": {
         "moves": 3331,
-        "avg_loss": 2.74,
-        "mistakes": 119,
-        "blunders": 108
+        "avg_loss": 2.69,
+        "mistakes": 118,
+        "blunders": 105
       },
       "endgame": {
         "moves": 3503,
-        "avg_loss": 2.08,
-        "mistakes": 61,
-        "blunders": 83
+        "avg_loss": 2.1,
+        "mistakes": 69,
+        "blunders": 88
       }
     },
     "motifs": {
-      "positional": 100,
-      "missed tactic": 49,
+      "positional": 94,
+      "missed tactic": 58,
       "hanging piece": 24,
       "king safety": 12,
       "pin": 6,
-      "back rank": 5,
       "fork": 5,
+      "back rank": 4,
       "allowed mate": 4,
       "passed pawn": 2
     },
-    "time_trouble_blunders": 42,
+    "time_trouble_blunders": 48,
     "examples": [
       {
         "url": "https://www.chess.com/game/live/186037765242",
         "move": "93.Ra5",
         "fen": "8/8/R7/6p1/7k/3r4/4K3/8 w - - 0 93",
-        "win_pct_lost": 63.0,
+        "win_pct_lost": 58.8,
         "phase": "endgame",
         "motif": "missed tactic",
         "best_move": "Kxd3",
@@ -669,34 +669,14 @@
         "win_pct_lost": 49.6,
         "phase": "middlegame",
         "motif": "allowed mate",
-        "best_move": "Kh3",
+        "best_move": "Kh1",
         "clock": 41.4
-      },
-      {
-        "url": "https://www.chess.com/game/live/186618007298",
-        "move": "24...Kh3",
-        "fen": "r3q3/pp2np1r/2np2p1/2p1Pp2/2b2R1P/2NP2P1/PPP2KRk/8 b - - 0 24",
-        "win_pct_lost": 49.6,
-        "phase": "middlegame",
-        "motif": "allowed mate",
-        "best_move": "Kh3",
-        "clock": 39.4
-      },
-      {
-        "url": "https://www.chess.com/game/live/186131537420",
-        "move": "56...Nd3",
-        "fen": "8/8/3N4/3pn3/1R6/4k3/2r5/5K2 b - - 0 56",
-        "win_pct_lost": 48.2,
-        "phase": "endgame",
-        "motif": "missed tactic",
-        "best_move": "Rf2+",
-        "clock": 16.1
       },
       {
         "url": "https://www.chess.com/game/live/185886450058",
         "move": "18.Ng4",
         "fen": "r3r1k1/pbq1bpp1/1p2pn1p/2p1N3/2PP3Q/1P6/PBB2PPP/2KRR3 w - - 0 18",
-        "win_pct_lost": 47.6,
+        "win_pct_lost": 49.1,
         "phase": "middlegame",
         "motif": "missed tactic",
         "best_move": "dxc5",
@@ -706,31 +686,31 @@
         "url": "https://www.chess.com/game/live/187783086585",
         "move": "45.Qe6+",
         "fen": "6k1/p5p1/1p3pq1/2rNQRb1/6Pp/P6P/5P2/6K1 w - - 0 45",
-        "win_pct_lost": 45.9,
+        "win_pct_lost": 49.0,
         "phase": "endgame",
         "motif": "missed tactic",
         "best_move": "Ne7+",
         "clock": 10.1
       },
       {
+        "url": "https://www.chess.com/game/live/186131537420",
+        "move": "56...Nd3",
+        "fen": "8/8/3N4/3pn3/1R6/4k3/2r5/5K2 b - - 0 56",
+        "win_pct_lost": 48.9,
+        "phase": "endgame",
+        "motif": "missed tactic",
+        "best_move": "Rf2+",
+        "clock": 16.1
+      },
+      {
         "url": "https://www.chess.com/game/live/186165432764",
         "move": "10.O-O",
         "fen": "rn1q1rk1/p2pbpp1/bp2pn1p/8/3P1B2/2PB1N2/PP1N1PPP/R2QK2R w KQ - 0 10",
-        "win_pct_lost": 45.2,
+        "win_pct_lost": 43.6,
         "phase": "opening",
         "motif": "hanging piece",
-        "best_move": "Ne4",
+        "best_move": "Bxa6",
         "clock": 170.6
-      },
-      {
-        "url": "https://www.chess.com/game/live/187783087147",
-        "move": "47...Rd3+",
-        "fen": "8/2R2pkp/rN4p1/2PK4/P7/4r1P1/7P/8 b - - 0 47",
-        "win_pct_lost": 42.9,
-        "phase": "endgame",
-        "motif": "positional",
-        "best_move": "Re2",
-        "clock": 26.5
       },
       {
         "url": "https://www.chess.com/game/live/187780086051",
@@ -739,18 +719,38 @@
         "win_pct_lost": 41.3,
         "phase": "endgame",
         "motif": "hanging piece",
-        "best_move": "Kb4",
+        "best_move": "Bc5",
         "clock": 17.8
       },
       {
-        "url": "https://www.chess.com/game/live/187178295265",
-        "move": "29.Kh2",
-        "fen": "5r2/5ppk/6qp/2p5/1pBr3P/2bPR1P1/4QP2/1R4K1 w - - 0 29",
-        "win_pct_lost": 40.2,
-        "phase": "middlegame",
+        "url": "https://www.chess.com/game/live/186165667898",
+        "move": "51.a8=Q",
+        "fen": "8/P3Qp1k/6p1/7p/4p2P/6P1/q4PK1/8 w - - 0 51",
+        "win_pct_lost": 40.1,
+        "phase": "endgame",
+        "motif": "hanging piece",
+        "best_move": "Qc5",
+        "clock": 25.5
+      },
+      {
+        "url": "https://www.chess.com/game/live/186299125430",
+        "move": "92...Kb7",
+        "fen": "6Q1/2p2K2/2k5/8/8/8/p7/8 b - - 0 92",
+        "win_pct_lost": 40.1,
+        "phase": "endgame",
+        "motif": "king safety",
+        "best_move": "a1=Q",
+        "clock": 5.9
+      },
+      {
+        "url": "https://www.chess.com/game/live/187783087147",
+        "move": "47...Rd3+",
+        "fen": "8/2R2pkp/rN4p1/2PK4/P7/4r1P1/7P/8 b - - 0 47",
+        "win_pct_lost": 40.0,
+        "phase": "endgame",
         "motif": "positional",
-        "best_move": "h5",
-        "clock": 34.1
+        "best_move": "Rc3",
+        "clock": 26.5
       }
     ]
   },
@@ -805,7 +805,7 @@
       "score_pct": 37.5,
       "record": "1W 1D 2L",
       "usual_move": "Bf5",
-      "eval_cp": 72
+      "eval_cp": 59
     }
   ],
   "endgames": {
@@ -813,8 +813,8 @@
     "score_pct": 81.6,
     "record": "120W 18D 20L",
     "moves_checked": 3503,
-    "avg_loss": 2.08,
-    "blunders": 83
+    "avg_loss": 2.1,
+    "blunders": 88
   },
   "losses": {
     "count": 28,
@@ -902,7 +902,7 @@
     ]
   },
   "notes": [
-    "Avoid the English Opening if you can: they score 100.0% in it.",
+    "Avoid the English Opening when you have White if you can: they score 100.0% in it with Black (7 games).",
     "Their play is weakest in the middlegame (largest average loss per move).",
     "Most common tactical slip: missing their own captures and checks."
   ]

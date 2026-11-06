@@ -42,3 +42,28 @@ REAL_STOCKFISH = os.environ.get("CHESSPREP_TEST_STOCKFISH") or shutil.which("sto
 def test_analysis_with_real_stockfish(alice_db):
     stats = run_analysis(alice_db.db_path, REAL_STOCKFISH, depth=6, workers=2)
     assert stats.analysed > 50 and stats.errors == 0
+
+
+def test_self_contradicting_eval_is_rechecked(alice_db, fake_engine):
+    from chess_prep.analyze import find_contradictions, recheck_contradictions
+
+    conn = db.connect(alice_db.db_path)
+    conn.execute("DELETE FROM evals")
+    m = conn.execute("SELECT uci, epd_before, epd_after FROM moves WHERE ply = 8 LIMIT 1").fetchone()
+    white_moved = m["epd_before"].split()[1] == "w"
+    # The engine calls the played move best, yet scores the result as lost for the mover.
+    conn.executemany(
+        "INSERT INTO evals (epd, cp, best_uci, depth, source) VALUES (?, ?, ?, 12, 'stockfish')",
+        [
+            (m["epd_before"], 0, m["uci"]),
+            (m["epd_after"], -900 if white_moved else 900, None),
+        ],
+    )
+    conn.commit()
+    assert set(find_contradictions(conn, 12)) == {m["epd_before"], m["epd_after"]}
+
+    assert recheck_contradictions(conn, fake_engine, 12) == 2
+    row = conn.execute("SELECT depth FROM evals WHERE epd = ?", (m["epd_before"],)).fetchone()
+    assert row["depth"] == 20
+    assert find_contradictions(conn, 12) == []  # deeper evals are not checked again
+    conn.close()

@@ -21,6 +21,9 @@ import chess.engine
 from chess_prep.pgnparse import MATE_SCORE
 
 DEFAULT_DEPTH = 12
+RECHECK_EXTRA_DEPTH = 8
+# A move the engine called best should not cost this much (win %, mover's view).
+RECHECK_DROP = 15.0
 
 
 @dataclass
@@ -29,6 +32,7 @@ class AnalysisStats:
     analysed: int = 0
     cached: int = 0
     errors: int = 0
+    rechecked: int = 0
 
 
 def default_workers() -> int:
@@ -131,6 +135,7 @@ def run_analysis(
         if on_start:
             on_start(len(engine_jobs))
         if not engine_jobs:
+            stats.rechecked = recheck_contradictions(conn, stockfish, depth)
             return stats
 
         jobs: queue.Queue = queue.Queue()
@@ -175,9 +180,75 @@ def run_analysis(
             _flush(conn, batch)
             for t in threads:
                 t.join(timeout=10)
+        stats.rechecked = recheck_contradictions(conn, stockfish, depth)
     finally:
         conn.close()
     return stats
+
+
+def _win_pct(cp: int) -> float:
+    from chess_prep.report import win_pct
+
+    return win_pct(cp)
+
+
+def find_contradictions(conn: sqlite3.Connection, max_depth: int) -> list[str]:
+    """Positions where the engine's own best move loses a lot by the engine's own eval.
+
+    A shallow search sometimes picks a move whose resulting position, searched one
+    ply deeper, turns out to be lost (a horizon effect). Then the move played looks
+    like a blunder and the "best move" shown is that same blunder. Returns the
+    positions (before and after such moves) that need a deeper look.
+    """
+    rows = conn.execute(
+        """SELECT DISTINCT m.epd_before, m.epd_after, eb.cp AS cp_before, ea.cp AS cp_after
+           FROM moves m
+           JOIN evals eb ON eb.epd = m.epd_before
+           JOIN evals ea ON ea.epd = m.epd_after
+           WHERE m.uci = eb.best_uci AND eb.source = 'stockfish' AND eb.depth <= ?
+             AND eb.cp IS NOT NULL AND ea.cp IS NOT NULL""",
+        (max_depth,),
+    ).fetchall()
+    out: list[str] = []
+    for epd_before, epd_after, cp_before, cp_after in rows:
+        white_to_move = epd_before.split()[1] == "w"
+        before, after = _win_pct(cp_before), _win_pct(cp_after)
+        drop = (before - after) if white_to_move else (after - before)
+        if drop >= RECHECK_DROP:
+            out += [epd_before, epd_after]
+    return list(dict.fromkeys(out))
+
+
+def recheck_contradictions(conn: sqlite3.Connection, stockfish: Path, depth: int) -> int:
+    """Re-analyse self-contradicting positions deeper so blunders get the right best move."""
+    epds = find_contradictions(conn, depth)
+    if not epds:
+        return 0
+    deeper = depth + RECHECK_EXTRA_DEPTH
+    batch: list[tuple] = []
+    engine = chess.engine.SimpleEngine.popen_uci(str(stockfish))
+    try:
+        engine.configure({"Threads": max(1, min(8, os.cpu_count() or 1)), "Hash": 256})
+        for epd in epds:
+            board = chess.Board()
+            board.set_epd(epd)
+            if board.is_game_over():
+                continue
+            try:
+                info = engine.analyse(board, chess.engine.Limit(depth=deeper))
+            except chess.engine.EngineError:
+                continue
+            score = info.get("score")
+            if score is None:
+                continue
+            pv = info.get("pv") or []
+            batch.append((epd, score.white().score(mate_score=MATE_SCORE), pv[0].uci() if pv else None, deeper))
+    finally:
+        with contextlib.suppress(Exception):
+            engine.quit()
+    n = len(batch)
+    _flush(conn, batch)
+    return n
 
 
 def _flush(conn: sqlite3.Connection, batch: list[tuple]) -> None:
